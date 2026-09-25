@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width device-width, initial-scale=1.0">
+</head>
+<body>
+ <h2>Cloud-Based Student Document Repository</h2>
+<!--File Upload Form-->
+<form action="/upload" method="POST" enctype="multipart/form-data">
+      <label for="studentId">Student ID/Name:</label>
+      <input type="text" id="studentId" name="studentId" required><br><br>
+      <label for="doctype">Documen Type:</label>
+      <select id="doctype" name="doctype">
+          <option value="certificate">Certificate</option>
+          <option value="assignment">Assignment</option>
+          <option value="project">Project File</option>
+      </select><br><br>
+      <input type="file"name="file" required><br><br>
+      <button type="submit">Upload Document</button>
+  </form>
+</body>
+</html>
